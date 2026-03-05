@@ -1,0 +1,54 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "imagens"
+public_folder: "/imagens"
+
+collections:
+  - name: "site"
+    label: "Conteúdo do Site"
+    files:
+      - file: "content/site.json"
+        label: "Site (geral)"
+        name: "sitejson"
+        fields:
+          - label: "Marca"
+            name: "brand"
+            widget: "object"
+            fields:
+              - {label: "Nome", name: "name", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Cidade", name: "city", widget: "string"}
+              - {label: "Instagram (sem @)", name: "instagram", widget: "string"}
+              - {label: "WhatsApp (somente números com DDI)", name: "whatsapp", widget: "string"}
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Selo (badge)", name: "badge", widget: "string"}
+              - {label: "Título", name: "headline", widget: "string"}
+              - {label: "Texto", name: "subheadline", widget: "text"}
+          - label: "Cursos"
+            name: "courses"
+            widget: "list"
+            fields:
+              - {label: "Tag", name: "tag", widget: "string"}
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Descrição", name: "desc", widget: "text"}
+              - {label: "Tópicos", name: "bullets", widget: "list"}
+              - {label: "Preço", name: "price", widget: "string"}
+          - label: "Galeria"
+            name: "gallery"
+            widget: "object"
+            fields:
+              - label: "Imagens"
+                name: "images"
+                widget: "list"
+                field: {label: "Imagem", name: "image", widget: "image"}
+          - label: "FAQ"
+            name: "faq"
+            widget: "list"
+            fields:
+              - {label: "Pergunta", name: "q", widget: "string"}
+              - {label: "Resposta", name: "a", widget: "text"}

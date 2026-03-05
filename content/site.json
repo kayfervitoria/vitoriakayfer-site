@@ -1,0 +1,71 @@
+{
+  "brand": {
+    "name": "Vitória Kayfer",
+    "tagline": "Treinamento Queen Nails Vip",
+    "city": "Indaiatuba/SP",
+    "instagram": "vitoriakayfer.nails",
+    "whatsapp": "5519999769247"
+  },
+  "hero": {
+    "badge": "Turmas VIP • Acompanhamento de perto • Vagas reduzidas",
+    "headline": "Unhas que vendem de verdade",
+    "subheadline": "Técnicas VIP de Fibra/Molde F1, Blindagem e Esmaltação em Gel com Manicure Russa, com foco em 0 descolamentos, acabamento impecável e fotos que atraem clientes."
+  },
+  "courses": [
+    {
+      "tag": "Mais procurado",
+      "title": "Fibra de Vidro / Molde F1",
+      "desc": "Estrutura resistente + preparação correta para reduzir descolamentos e elevar seu padrão.",
+      "bullets": [
+        "Aplicação + pilares da resistência",
+        "Formas: quadrada, almond, stiletto, bailarina",
+        "Manutenção, remoção e padrão de excelência"
+      ],
+      "price": "R$ 1.199,00"
+    },
+    {
+      "tag": "Alta demanda",
+      "title": "Blindagem + Manicure Russa",
+      "desc": "Unha forte, sem infiltração e com cutícula impecável — acabamento perfeito e durabilidade.",
+      "bullets": [
+        "Como evitar trincas e melhorar aderência",
+        "Quando indicar blindagem",
+        "Tempo de duração, manutenção e remoção"
+      ],
+      "price": "R$ 1.099,00"
+    },
+    {
+      "tag": "Fidelização",
+      "title": "Esmaltação em Gel + Manicure Russa",
+      "desc": "Ideal para fidelizar: avaliação da cliente + “semi blindagem” + fotos que vendem.",
+      "bullets": [
+        "Preparação correta (0 descolamentos)",
+        "Avaliação: o que indicar para cada cliente",
+        "Remoção e tempo de duração"
+      ],
+      "price": "R$ 999,00"
+    }
+  ],
+  "gallery": {
+    "images": [
+      "imagens/vitoria1.png",
+      "imagens/vitoria2.png",
+      "imagens/vitoria3.png",
+      "imagens/vitoria4.png"
+    ]
+  },
+  "faq": [
+    {
+      "q": "Preciso ter experiência?",
+      "a": "Não necessariamente. O treinamento se adapta ao seu nível. Se você já atende, eu corrijo técnica e elevo seu padrão. Se está começando, você aprende o método certo desde o início."
+    },
+    {
+      "q": "Os cursos são no mesmo dia?",
+      "a": "Não. São 3 cursos diferentes em dias separados. Para fazer mais de um, é necessário agendar mais de um dia (com desconto no pacote)."
+    },
+    {
+      "q": "Como funciona a reserva da vaga?",
+      "a": "Para garantir a vaga, é cobrado um sinal de 30%. Cancelamentos sem aviso com 3 dias de antecedência não têm devolução do sinal."
+    }
+  ]
+}
