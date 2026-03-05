@@ -1,15 +1,19 @@
 <!doctype html>
 <html lang="pt-br">
+
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title id="seoTitle">Vitória Kayfer • Treinamento Queen Nails VIP</title>
-<meta name="description" id="seoDesc" content="Treinamentos VIP presenciais em Indaiatuba/SP."/>
-<meta property="og:title" content="Vitória Kayfer • Treinamento Queen Nails VIP"/>
-<meta property="og:description" content="Treinamentos VIP presenciais em Indaiatuba/SP."/>
-<meta property="og:type" content="website"/>
-<meta property="og:image" id="seoOg" content="/imagens/vitoria-pro.png"/>
-<meta name="theme-color" content="#caa247"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Vitória Kayfer • Treinamento Queen Nails VIP</title>
+
+<meta name="description" content="Treinamentos VIP presenciais em Indaiatuba/SP.">
+<meta property="og:title" content="Vitória Kayfer • Treinamento Queen Nails VIP">
+<meta property="og:description" content="Treinamentos VIP presenciais em Indaiatuba/SP.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/imagens/vitoria-pro.png">
+
+<meta name="theme-color" content="#caa247">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,42 +22,163 @@
 
 <style>
 
+/* =========================
+   VARIÁVEIS
+========================= */
+
+:root{
+--g1:#fff3cc;
+--g2:#f1d483;
+--g3:#caa247;
+--ink:#0f0f0f;
+--mut:#383838;
+--line:rgba(0,0,0,.08);
+--r:22px;
+--max:1120px;
+--sh:0 14px 40px rgba(0,0,0,.14);
+--sh2:0 10px 26px rgba(0,0,0,.10);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+
 body{
 margin:0;
+color:var(--ink);
 font-family:Inter,system-ui;
-background:linear-gradient(180deg,#fff3cc,#f1d483 40%,#fff);
+background:linear-gradient(180deg,var(--g1),var(--g2),#fff);
+}
+
+/* =========================
+HEADER
+========================= */
+
+header{
+position:sticky;
+top:0;
+background:#ffffffcc;
+backdrop-filter:blur(10px);
+border-bottom:1px solid var(--line);
 }
 
 .wrap{
-max-width:1100px;
+max-width:var(--max);
 margin:auto;
-padding:20px;
+padding:0 20px;
 }
 
-.heroimg{
-width:100%;
-max-height:420px;
-object-fit:cover;
-border-radius:20px;
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:10px;
+text-decoration:none;
+}
+
+.crown{
+width:36px;
+height:36px;
+display:grid;
+place-items:center;
+border-radius:10px;
+background:linear-gradient(var(--g2),var(--g3));
+}
+
+.links{
+display:flex;
+gap:10px;
 }
 
 .chip{
 padding:10px 14px;
 border-radius:999px;
-text-decoration:none;
+border:1px solid var(--line);
+background:#fff;
 font-weight:700;
-display:inline-block;
-margin-right:8px;
+font-size:13px;
+text-decoration:none;
 }
 
-.p{background:#000;color:#fff;}
-.g{background:#caa247;color:#000;}
+.chip.p{
+background:#000;
+color:#fff;
+}
 
-.kpi{
-padding:14px;
+/* =========================
+HERO
+========================= */
+
+.hero{
+padding:60px 0;
+}
+
+.hg{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+align-items:center;
+}
+
+h1{
+font-family:"Playfair Display";
+font-size:46px;
+margin:10px 0;
+}
+
+.lead{
+font-size:16px;
+line-height:1.7;
+color:var(--mut);
+}
+
+.heroimg{
+width:100%;
+height:360px;
+object-fit:cover;
+border-radius:22px;
+}
+
+/* =========================
+SEÇÕES
+========================= */
+
+section{
+padding:50px 0;
+}
+
+h2{
+font-family:"Playfair Display";
+font-size:30px;
+margin-bottom:10px;
+}
+
+.g3{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:16px;
+}
+
+.box{
 background:#fff;
-border-radius:14px;
-margin-top:10px;
+padding:20px;
+border-radius:22px;
+border:1px solid var(--line);
+}
+
+/* =========================
+PORTFOLIO
+========================= */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:12px;
 }
 
 .gallery img{
@@ -61,144 +186,197 @@ width:100%;
 height:220px;
 object-fit:cover;
 border-radius:14px;
-margin-top:10px;
 }
 
-footer{
-margin-top:40px;
-font-size:13px;
-opacity:.8;
+/* =========================
+RESPONSIVO
+========================= */
+
+@media(max-width:900px){
+
+.hg{grid-template-columns:1fr}
+
+.g3{grid-template-columns:1fr}
+
+.gallery{grid-template-columns:1fr 1fr}
+
 }
 
 </style>
+
 </head>
+
 
 <body>
 
+<header>
 <div class="wrap">
 
-<h1 id="ht">Carregando...</h1>
+<div class="nav">
 
-<p id="hs"></p>
+<a class="brand" href="#">
+<div class="crown">👑</div>
+<div>
+<strong>Vitória Kayfer</strong><br>
+Treinamento VIP
+</div>
+</a>
 
-<img id="hi" class="heroimg" src="/imagens/vitoria-pro.png">
+<div class="links">
 
-<div style="margin-top:20px">
-
-<a id="waPrimary" class="chip p" target="_blank">WhatsApp</a>
-
-<a href="#cursos" class="chip g">Ver cursos</a>
+<a class="chip" href="#cursos">Cursos</a>
+<a class="chip" href="#portfolio">Portfólio</a>
+<a class="chip p" href="#">WhatsApp</a>
 
 </div>
+
+</div>
+</div>
+</header>
+
+
+
+<main>
+
+<section class="hero">
+
+<div class="wrap">
+
+<div class="hg">
+
+<div>
+
+<h1>Treinamento Queen Nails VIP</h1>
+
+<p class="lead">
+Treinamentos presenciais exclusivos em Indaiatuba/SP.
+Aprenda técnicas profissionais, acabamento perfeito e aumente o valor do seu trabalho.
+</p>
+
+<a class="chip p">Garantir vaga</a>
+
+</div>
+
+
+<div>
+
+<img class="heroimg" src="/imagens/vitoria-pro.png">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="cursos">
+
+<div class="wrap">
 
 <h2>Cursos</h2>
 
-<div id="cg"></div>
+<div class="g3">
 
-<h2>Portfólio</h2>
+<div class="box">
 
-<div class="gallery" id="gg"></div>
+<h3>Curso Nail Designer</h3>
 
-<footer>
-
-Para editar o site acesse:
-
-<b>/admin</b>
-
-</footer>
+<p>
+Aprenda técnicas modernas de estrutura, acabamento e design.
+</p>
 
 </div>
 
-<script>
+<div class="box">
 
-async function load(){
+<h3>Curso Fibra de Vidro</h3>
 
-const r = await fetch("/content/site.json",{cache:"no-store"});
+<p>
+Domine alongamentos com acabamento profissional.
+</p>
 
-const d = await r.json();
+</div>
 
-document.getElementById("ht").textContent = d.hero.headline;
+<div class="box">
 
-document.getElementById("hs").textContent = d.hero.subheadline;
+<h3>Curso Manicure Premium</h3>
 
-if(d.hero.hero_image)
-document.getElementById("hi").src = d.hero.hero_image;
+<p>
+Técnicas de acabamento e fidelização de clientes.
+</p>
 
-const wa = d.brand.whatsapp;
+</div>
 
-const waUrl = (msg)=>`https://wa.me/${wa}?text=${encodeURIComponent(msg)}`;
+</div>
 
-document.getElementById("waPrimary").href =
-waUrl("Oi Vitória! Quero informações sobre o curso.");
+</div>
 
-const cg = document.getElementById("cg");
+</section>
 
-cg.innerHTML="";
 
-(d.courses||[]).forEach(c=>{
 
-const div = document.createElement("div");
+<section id="portfolio">
 
-div.className="kpi";
+<div class="wrap">
 
-div.innerHTML=`
+<h2>Portfólio</h2>
 
-<b>${c.title}</b>
+<div class="gallery">
 
-<p>${c.desc}</p>
+<img src="/imagens/portfolio1.jpg">
+<img src="/imagens/portfolio2.jpg">
+<img src="/imagens/portfolio3.jpg">
 
-`;
+</div>
 
-cg.appendChild(div);
+</div>
 
-});
+</section>
 
-const gg = document.getElementById("gg");
 
-gg.innerHTML="";
 
-(d.portfolio?.images || []).forEach(src=>{
+<footer>
 
-const img=document.createElement("img");
+<div class="wrap">
 
-img.src=src;
+<p>© 2026 Vitória Kayfer • Indaiatuba/SP</p>
 
-gg.appendChild(img);
+</div>
 
-});
+</footer>
 
-}
 
-load();
 
-</script>
-
-<!-- NETLIFY IDENTITY -->
+</main>
+<!-- NETLIFY IDENTITY (para aceitar convite / invite_token e login do CMS) -->
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 <script>
+(function () {
 
-if (window.netlifyIdentity) {
+  if (!window.netlifyIdentity) return;
 
-window.netlifyIdentity.on("init", user => {
+  const params = new URLSearchParams(window.location.search);
+  const inviteToken = params.get("invite_token");
 
-const params = new URLSearchParams(window.location.search);
+  // Se entrou pelo link do convite, redireciona para o admin
+  if (inviteToken) {
 
-if(params.get("invite_token")){
+    window.netlifyIdentity.on("init", function () {
 
-setTimeout(()=>{
+      setTimeout(function () {
+        window.location.href = "/admin/";
+      }, 400);
 
-window.location.href="/admin/";
+    });
 
-},500);
+  }
 
-}
-
-});
-
-}
-
+})();
 </script>
-
+  
 </body>
 </html>
