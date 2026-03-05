@@ -1,0 +1,114 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "imagens"
+public_folder: "/imagens"
+
+collections:
+  - name: "site"
+    label: "Conteúdo do Site"
+    files:
+      - file: "content/site.json"
+        label: "Site (geral)"
+        name: "sitejson"
+        fields:
+          - label: "Brand"
+            name: "brand"
+            widget: "object"
+            fields:
+              - {label: "Nome", name: "name", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Cidade", name: "city", widget: "string"}
+              - {label: "Instagram (sem @)", name: "instagram", widget: "string"}
+              - {label: "WhatsApp (somente números com DDI)", name: "whatsapp", widget: "string"}
+
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Badge", name: "badge", widget: "string"}
+              - {label: "Título", name: "headline", widget: "string"}
+              - {label: "Texto", name: "subheadline", widget: "text"}
+              - {label: "Imagem principal", name: "hero_image", widget: "image"}
+
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Texto do botão principal", name: "primary_text", widget: "string"}
+              - {label: "Texto do botão secundário", name: "secondary_text", widget: "string"}
+              - {label: "Mensagem do WhatsApp", name: "whatsapp_message", widget: "text"}
+
+          - label: "Destaques (3)"
+            name: "highlights"
+            widget: "list"
+            fields:
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Descrição", name: "desc", widget: "text"}
+
+          - label: "Cursos"
+            name: "courses"
+            widget: "list"
+            fields:
+              - {label: "Tag", name: "tag", widget: "string"}
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Descrição", name: "desc", widget: "text"}
+              - {label: "Tópicos", name: "bullets", widget: "list"}
+              - {label: "Preço", name: "price", widget: "string"}
+              - {label: "Duração", name: "duration", widget: "string", required: false}
+              - {label: "Inclui (tags)", name: "includes", widget: "list", required: false}
+
+          - label: "Turmas"
+            name: "schedule"
+            widget: "object"
+            fields:
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Observação", name: "note", widget: "string"}
+              - label: "Itens"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Data (YYYY-MM-DD)", name: "date", widget: "string"}
+                  - {label: "Horário", name: "time", widget: "string"}
+                  - {label: "Curso", name: "course", widget: "string"}
+                  - {label: "Vagas", name: "spots", widget: "string"}
+
+          - label: "Depoimentos"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - {label: "Nome", name: "name", widget: "string"}
+              - {label: "Texto", name: "text", widget: "text"}
+
+          - label: "Portfólio"
+            name: "portfolio"
+            widget: "object"
+            fields:
+              - label: "Imagens"
+                name: "images"
+                widget: "list"
+                field: {label: "Imagem", name: "image", widget: "image"}
+
+          - label: "FAQ"
+            name: "faq"
+            widget: "list"
+            fields:
+              - {label: "Pergunta", name: "q", widget: "string"}
+              - {label: "Resposta", name: "a", widget: "text"}
+
+          - label: "Local"
+            name: "location"
+            widget: "object"
+            fields:
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Endereço (texto)", name: "address", widget: "string"}
+              - {label: "URL do mapa embed", name: "map_embed_url", widget: "string"}
+
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Descrição", name: "description", widget: "text"}
+              - {label: "Imagem OG", name: "og_image", widget: "image"}
