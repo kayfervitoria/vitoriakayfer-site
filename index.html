@@ -1,289 +1,204 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title id="seoTitle">Vitória Kayfer • Treinamento Queen Nails VIP</title>
-  <meta name="description" id="seoDesc" content="Treinamentos VIP presenciais em Indaiatuba/SP." />
-  <meta property="og:title" content="Vitória Kayfer • Treinamento Queen Nails VIP" />
-  <meta property="og:description" content="Treinamentos VIP presenciais em Indaiatuba/SP." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" id="seoOg" content="/imagens/vitoria-pro.png" />
-  <meta name="theme-color" content="#caa247" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Great+Vibes&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{--g1:#fff3cc;--g2:#f1d483;--g3:#caa247;--ink:#0f0f0f;--mut:#383838;--line:rgba(0,0,0,.08);--r:22px;--max:1120px;--sh:0 14px 40px rgba(0,0,0,.14);--sh2:0 10px 26px rgba(0,0,0,.10);}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}
-    body{margin:0;color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background:radial-gradient(1200px 600px at 15% 15%, rgba(255,255,255,.86), transparent 60%),
-               radial-gradient(900px 480px at 80% 30%, rgba(255,255,255,.55), transparent 65%),
-               linear-gradient(180deg,var(--g1),var(--g2) 35%,#f7e9c2 72%,#fff 100%);}
-    a{color:inherit}.wrap{max-width:var(--max);margin:0 auto;padding:0 18px;}
-    header{position:sticky;top:0;z-index:20;backdrop-filter:blur(10px);background:rgba(255,255,255,.62);border-bottom:1px solid var(--line);}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 0;flex-wrap:wrap}
-    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;}
-    .crown{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(180deg,var(--g2),var(--g3));box-shadow:var(--sh2);border:1px solid rgba(0,0,0,.08);font-size:16px;}
-    .bt strong{display:block;font-family:"Playfair Display",serif;font-size:16px;line-height:1.05;}
-    .bt span{display:block;font-family:"Great Vibes",cursive;font-size:18px;line-height:1.05;opacity:.92;}
-    .links{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
-    .chip{padding:10px 12px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.55);box-shadow:var(--sh2);font-weight:800;font-size:13px;text-decoration:none;}
-    .chip.p{background:linear-gradient(180deg,#111,#000);color:#fff;border-color:rgba(0,0,0,.12);}
-    .chip.g{background:linear-gradient(180deg,rgba(241,212,131,.92),rgba(202,162,71,.78));border-color:rgba(0,0,0,.10);}
-    section{padding:46px 0;}
-    .hero{padding:56px 0 22px;}
-    .hg{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:center;}
-    .badge{display:inline-flex;gap:10px;padding:9px 12px;border-radius:999px;background:rgba(255,255,255,.62);border:1px solid var(--line);box-shadow:var(--sh2);font-size:13px;color:var(--mut);}
-    h1{margin:14px 0 12px;font-family:"Playfair Display",serif;font-size:46px;line-height:1.03;letter-spacing:-.2px;}
-    .lead{font-size:16px;line-height:1.68;color:var(--mut);max-width:70ch;}
-    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px;}
-    .card{background:rgba(255,255,255,.66);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;}
-    .heroimg{width:100%;height:360px;object-fit:cover;display:block;}
-    .pad{padding:16px 16px 18px;}
-    .mini{margin:0;color:var(--mut);font-size:14px;line-height:1.6;}
-    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px;}
-    .kpi{border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.55);box-shadow:var(--sh2);padding:12px;}
-    .kpi b{display:block;font-family:"Playfair Display",serif;font-size:16px;}
-    .kpi span{display:block;color:var(--mut);font-size:13px;line-height:1.45;margin-top:4px;}
-    .st{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px;}
-    .st h2{margin:0;font-family:"Playfair Display",serif;font-size:30px;}
-    .st p{margin:0;color:var(--mut);font-size:14px;line-height:1.6;max-width:76ch;}
-    .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
-    .box{background:rgba(255,255,255,.66);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh2);padding:18px;}
-    .tag{display:inline-flex;font-weight:900;font-size:12px;padding:7px 10px;border-radius:999px;background:linear-gradient(180deg,rgba(241,212,131,.55),rgba(202,162,71,.35));border:1px solid rgba(0,0,0,.08);margin-bottom:10px;}
-    .box h3{margin:0 0 8px;font-family:"Playfair Display",serif;font-size:20px;}
-    .box p{margin:0 0 12px;color:var(--mut);font-size:14px;line-height:1.65;}
-    .list{margin:0;padding-left:18px;color:var(--mut);font-size:14px;line-height:1.75;}
-    .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;}
-    .pill{font-size:12px;font-weight:900;padding:7px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.55);}
-    .price{font-weight:1000;margin-top:10px;}
-    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;}
-    .sched{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
-    .item{background:rgba(255,255,255,.66);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh2);padding:16px;}
-    .item b{display:block;font-family:"Playfair Display",serif;font-size:18px;}
-    .item span{display:block;margin-top:6px;color:var(--mut);font-size:14px;line-height:1.55;}
-    .quotes{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
-    blockquote{margin:0;padding:18px;border-radius:var(--r);border:1px solid var(--line);background:rgba(255,255,255,.66);box-shadow:var(--sh2);}
-    blockquote p{margin:0;color:var(--mut);font-size:14px;line-height:1.7;}
-    blockquote footer{margin-top:10px;color:var(--ink);font-weight:900;font-size:13px;}
-    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
-    .gallery img{width:100%;height:220px;object-fit:cover;border-radius:18px;border:1px solid var(--line);box-shadow:var(--sh2);}
-    details{background:rgba(255,255,255,.66);border:1px solid var(--line);border-radius:16px;padding:12px 14px;box-shadow:var(--sh2);}
-    details+details{margin-top:10px;}summary{cursor:pointer;font-weight:1000;}
-    details p{margin:10px 0 0;color:var(--mut);font-size:14px;line-height:1.7;}
-    .loc{display:grid;grid-template-columns:.9fr 1.1fr;gap:14px;align-items:stretch;}
-    .map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);box-shadow:var(--sh2);background:rgba(255,255,255,.66);}
-    .map iframe{width:100%;height:320px;border:0;display:block;}
-    .wa{position:fixed;right:16px;bottom:16px;z-index:30;}
-    .sig{position:fixed;left:16px;bottom:16px;z-index:29;display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid var(--line);box-shadow:var(--sh2);backdrop-filter:blur(8px);}
-    .sig .m{width:30px;height:30px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(180deg,rgba(241,212,131,.95),rgba(202,162,71,.85));border:1px solid rgba(0,0,0,.10);font-size:16px;}
-    .sig b{display:block;font-family:"Playfair Display",serif;font-size:14px;line-height:1.1;}
-    .sig span{display:block;font-size:12px;color:var(--mut);line-height:1.1;margin-top:1px;}
-    footer{padding:26px 0 44px;color:var(--mut);font-size:13px;}
-    .foot{display:flex;gap:14px;flex-wrap:wrap;align-items:center;justify-content:space-between;}
-    @media (max-width:980px){.hg{grid-template-columns:1fr}.kpis{grid-template-columns:1fr}.g3{grid-template-columns:1fr}.sched{grid-template-columns:1fr}.quotes{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.loc{grid-template-columns:1fr}h1{font-size:40px}.sig{left:12px;bottom:78px}}
-  </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title id="seoTitle">Vitória Kayfer • Treinamento Queen Nails VIP</title>
+<meta name="description" id="seoDesc" content="Treinamentos VIP presenciais em Indaiatuba/SP."/>
+<meta property="og:title" content="Vitória Kayfer • Treinamento Queen Nails VIP"/>
+<meta property="og:description" content="Treinamentos VIP presenciais em Indaiatuba/SP."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" id="seoOg" content="/imagens/vitoria-pro.png"/>
+<meta name="theme-color" content="#caa247"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Great+Vibes&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:Inter,system-ui;
+background:linear-gradient(180deg,#fff3cc,#f1d483 40%,#fff);
+}
+
+.wrap{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+.heroimg{
+width:100%;
+max-height:420px;
+object-fit:cover;
+border-radius:20px;
+}
+
+.chip{
+padding:10px 14px;
+border-radius:999px;
+text-decoration:none;
+font-weight:700;
+display:inline-block;
+margin-right:8px;
+}
+
+.p{background:#000;color:#fff;}
+.g{background:#caa247;color:#000;}
+
+.kpi{
+padding:14px;
+background:#fff;
+border-radius:14px;
+margin-top:10px;
+}
+
+.gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:14px;
+margin-top:10px;
+}
+
+footer{
+margin-top:40px;
+font-size:13px;
+opacity:.8;
+}
+
+</style>
 </head>
+
 <body>
-<header><div class="wrap"><div class="nav">
-  <a class="brand" href="#topo"><div class="crown">👑</div><div class="bt"><strong id="bn">Vitória Kayfer</strong><span id="bt">Treinamento VIP</span></div></a>
-  <nav class="links">
-    <a class="chip" href="#cursos">Cursos</a><a class="chip" href="#turmas">Turmas</a><a class="chip" href="#portfolio">Portfólio</a>
-    <a class="chip g" id="igChip" href="#" target="_blank" rel="noreferrer">Instagram</a>
-    <a class="chip p" id="waTop" href="#" target="_blank" rel="noreferrer">WhatsApp</a>
-  </nav>
-</div></div></header>
 
-<main id="topo"><div class="wrap">
-  <section class="hero"><div class="hg">
-    <div>
-      <div class="badge" id="hb">Carregando…</div>
-      <h1 id="ht">Carregando…</h1>
-      <p class="lead" id="hs">Carregando…</p>
-      <div class="cta">
-        <a class="chip p" id="waPrimary" href="#" target="_blank" rel="noreferrer">Quero garantir minha vaga</a>
-        <a class="chip g" href="#cursos">Ver cursos</a>
-        <a class="chip" href="#faq">Dúvidas</a>
-      </div>
-      <div class="kpis" id="kpi"></div>
-    </div>
-    <div class="card">
-      <img class="heroimg" id="hi" src="/imagens/vitoria-pro.png" alt="Vitória Kayfer">
-      <div class="pad">
-        <p class="mini"><b>Atendimento e treinamentos em:</b> <span id="city">Indaiatuba/SP</span></p>
-        <p class="mini" style="margin-top:8px">Método VIP: técnica + acabamento + resultado. Menos retrabalho, mais confiança e mais valor percebido.</p>
-      </div>
-    </div>
-  </div></section>
+<div class="wrap">
 
-  <section id="cursos"><div class="st"><h2>Cursos</h2><p>Treinamentos presenciais com prática guiada. Para pacote com desconto, chame no WhatsApp.</p></div>
-    <div class="g3" id="cg"></div>
-  </section>
+<h1 id="ht">Carregando...</h1>
 
-  <section id="turmas"><div class="st"><h2 id="stt">Próximas turmas</h2><p id="stn">Datas atualizadas pelo painel /admin. Vagas limitadas.</p></div>
-    <div class="sched" id="sg"></div>
-  </section>
+<p id="hs"></p>
 
-  <section id="depoimentos"><div class="st"><h2>Resultados</h2><p>O foco é elevar padrão, melhorar retenção e aumentar ticket — sem mistério.</p></div>
-    <div class="quotes" id="tg"></div>
-  </section>
+<img id="hi" class="heroimg" src="/imagens/vitoria-pro.png">
 
-  <section id="portfolio"><div class="st"><h2>Portfólio</h2><p>Trabalhos reais. Você pode trocar/adicionar fotos pelo painel /admin.</p></div>
-    <div class="gallery" id="gg"></div>
-  </section>
+<div style="margin-top:20px">
 
-  <section id="faq"><div class="st"><h2>Dúvidas frequentes</h2><p>Respostas rápidas para remover objeções e facilitar sua decisão.</p></div>
-    <div id="fq"></div>
-  </section>
+<a id="waPrimary" class="chip p" target="_blank">WhatsApp</a>
 
-  <section id="local"><div class="st"><h2 id="lt">Local</h2><p id="la">Indaiatuba/SP</p></div>
-    <div class="loc">
-      <div class="box"><span class="tag">Endereço</span><h3>Indaiatuba/SP</h3><p>O endereço completo é enviado após confirmação da vaga.</p>
-        <div class="actions">
-          <a class="chip p" id="waSec" href="#" target="_blank" rel="noreferrer">Tirar dúvidas no WhatsApp</a>
-          <a class="chip g" id="igBtn" href="#" target="_blank" rel="noreferrer">Ver Instagram</a>
-        </div>
-      </div>
-      <div class="map"><iframe id="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-    </div>
-  </section>
+<a href="#cursos" class="chip g">Ver cursos</a>
 
-  <footer>
-    <div class="foot">
-      <div>© <span id="yr"></span> <b id="fn">Vitória Kayfer</b> • <span id="fc">Indaiatuba/SP</span></div>
-      <div><a id="igLink" href="#" target="_blank" rel="noreferrer">Instagram</a></div>
-    </div>
-    <div style="opacity:.85;margin-top:8px">Para editar: acesse <b>/admin</b> (ex.: https://SEU-SITE.netlify.app/admin)</div>
-  </footer>
-</div></main>
+</div>
 
-<div class="sig" aria-label="Assinatura Vitória Kayfer"><div class="m">👑</div><div><b id="sn">Vitória Kayfer</b><span id="stag">Treinamento Queen Nails VIP</span></div></div>
-<div class="wa"><a class="chip g" id="waFloat" href="#" target="_blank" rel="noreferrer">💬 WhatsApp</a></div>
+<h2>Cursos</h2>
+
+<div id="cg"></div>
+
+<h2>Portfólio</h2>
+
+<div class="gallery" id="gg"></div>
+
+<footer>
+
+Para editar o site acesse:
+
+<b>/admin</b>
+
+</footer>
+
+</div>
 
 <script>
-  document.getElementById("yr").textContent = new Date().getFullYear();
-  const fmt = (iso)=>{try{const d=new Date(iso+"T00:00:00");return d.toLocaleDateString("pt-BR",{day:"2-digit",month:"short",year:"numeric"});}catch(e){return iso;}};
-  async function load(){
-    const r = await fetch("/content/site.json",{cache:"no-store"});
-    const d = await r.json();
 
-    // SEO
-    if(d.seo){
-      document.getElementById("seoTitle").textContent = d.seo.title || document.title;
-      document.getElementById("seoDesc").setAttribute("content", d.seo.description || "");
-      document.getElementById("seoOg").setAttribute("content", d.seo.og_image || "/imagens/vitoria-pro.png");
-      document.title = d.seo.title || document.title;
-    }
+async function load(){
 
-    const wa = d.brand.whatsapp;
-    const waUrl = (msg)=>`https://wa.me/${wa}?text=${encodeURIComponent(msg)}`;
-    const igUrl = `https://instagram.com/${d.brand.instagram}`;
+const r = await fetch("/content/site.json",{cache:"no-store"});
 
-    // Brand
-    document.getElementById("bn").textContent = d.brand.name;
-    document.getElementById("bt").textContent = d.brand.tagline;
-    document.getElementById("city").textContent = d.brand.city;
-    document.getElementById("fn").textContent = d.brand.name;
-    document.getElementById("fc").textContent = d.brand.city;
-    document.getElementById("sn").textContent = d.brand.name;
-    document.getElementById("stag").textContent = d.brand.tagline;
+const d = await r.json();
 
-    document.getElementById("igChip").href = igUrl;
-    document.getElementById("igBtn").href = igUrl;
-    const igLink = document.getElementById("igLink");
-    igLink.href = igUrl;
-    igLink.textContent = "Instagram: @" + d.brand.instagram;
+document.getElementById("ht").textContent = d.hero.headline;
 
-    // Hero
-    document.getElementById("hb").textContent = `${d.hero.badge} • ${d.brand.city}`;
-    document.getElementById("ht").textContent = d.hero.headline;
-    document.getElementById("hs").textContent = d.hero.subheadline;
-    if(d.hero.hero_image) document.getElementById("hi").src = d.hero.hero_image;
+document.getElementById("hs").textContent = d.hero.subheadline;
 
-    // Highlights
-    const k = document.getElementById("kpi"); k.innerHTML="";
-    (d.highlights||[]).slice(0,3).forEach(h=>{
-      const el=document.createElement("div"); el.className="kpi";
-      el.innerHTML=`<b>${h.title}</b><span>${h.desc}</span>`; k.appendChild(el);
-    });
+if(d.hero.hero_image)
+document.getElementById("hi").src = d.hero.hero_image;
 
-    // WhatsApp
-    const msg = (d.cta && d.cta.whatsapp_message) ? d.cta.whatsapp_message : `Oi ${d.brand.name}! Quero datas e valores.`;
-    document.getElementById("waTop").href = waUrl(msg);
-    document.getElementById("waPrimary").textContent = (d.cta && d.cta.primary_text) ? d.cta.primary_text : "Quero garantir minha vaga";
-    document.getElementById("waPrimary").href = waUrl(msg);
-    document.getElementById("waSec").textContent = (d.cta && d.cta.secondary_text) ? d.cta.secondary_text : "Tirar dúvidas no WhatsApp";
-    document.getElementById("waSec").href = waUrl("Oi Vitória! Quero tirar dúvidas e saber as próximas turmas.");
-    document.getElementById("waFloat").href = waUrl("Oi Vitória! Quero tirar dúvidas e saber as próximas turmas.");
+const wa = d.brand.whatsapp;
 
-    // Courses
-    const cg=document.getElementById("cg"); cg.innerHTML="";
-    (d.courses||[]).forEach(c=>{
-      const el=document.createElement("div"); el.className="box";
-      const bullets=(c.bullets||[]).map(b=>`<li>${b}</li>`).join("");
-      const includes=(c.includes||[]).map(i=>`<span class="pill">${i}</span>`).join("");
-      el.innerHTML = `
-        <span class="tag">${c.tag||"Curso"}</span>
-        <h3>${c.title||""}</h3>
-        <p>${c.desc||""}</p>
-        <ul class="list">${bullets}</ul>
-        <div class="meta">
-          ${c.duration ? `<span class="pill">Duração: ${c.duration}</span>` : ``}
-          ${includes}
-        </div>
-        ${c.price ? `<div class="price">${c.price}</div>` : ``}
-        <div class="actions">
-          <a class="chip g" href="#turmas">Ver turmas</a>
-          <a class="chip p" href="${waUrl("Oi Vitória! Quero reservar o curso: " + (c.title||"") + ". Quais datas?")}">Reservar</a>
-        </div>`;
-      cg.appendChild(el);
-    });
+const waUrl = (msg)=>`https://wa.me/${wa}?text=${encodeURIComponent(msg)}`;
 
-    // Schedule
-    document.getElementById("stt").textContent = d.schedule?.title || "Próximas turmas";
-    document.getElementById("stn").textContent = d.schedule?.note || "";
-    const sg=document.getElementById("sg"); sg.innerHTML="";
-    (d.schedule?.items || []).forEach(it=>{
-      const el=document.createElement("div"); el.className="item";
-      el.innerHTML = `
-        <b>${fmt(it.date)} • ${it.course}</b>
-        <span>Horário: ${it.time || "a confirmar"}<br>Vagas: ${it.spots || "limitadas"}</span>
-        <div class="actions" style="margin-top:10px">
-          <a class="chip p" href="${waUrl("Oi Vitória! Quero garantir vaga na turma de " + it.course + " do dia " + it.date + ".")}">Garantir vaga</a>
-          <a class="chip" href="#cursos">Ver cursos</a>
-        </div>`;
-      sg.appendChild(el);
-    });
+document.getElementById("waPrimary").href =
+waUrl("Oi Vitória! Quero informações sobre o curso.");
 
-    // Testimonials
-    const tg=document.getElementById("tg"); tg.innerHTML="";
-    (d.testimonials||[]).forEach(t=>{
-      const bq=document.createElement("blockquote");
-      bq.innerHTML=`<p>“${t.text}”</p><footer>${t.name}</footer>`;
-      tg.appendChild(bq);
-    });
+const cg = document.getElementById("cg");
 
-    // Gallery
-    const gg=document.getElementById("gg"); gg.innerHTML="";
-    (d.portfolio?.images || []).forEach(src=>{
-      const img=document.createElement("img"); img.src=src; img.alt="Portfólio Vitória Kayfer";
-      gg.appendChild(img);
-    });
+cg.innerHTML="";
 
-    // FAQ
-    const fq=document.getElementById("fq"); fq.innerHTML="";
-    (d.faq||[]).forEach(item=>{
-      const dt=document.createElement("details");
-      dt.innerHTML=`<summary>${item.q}</summary><p>${item.a}</p>`;
-      fq.appendChild(dt);
-    });
+(d.courses||[]).forEach(c=>{
 
-    // Location
-    document.getElementById("lt").textContent = d.location?.title || "Local";
-    document.getElementById("la").textContent = d.location?.address || d.brand.city;
-    document.getElementById("map").src = d.location?.map_embed_url || "https://www.google.com/maps?q=Indaiatuba%20SP&output=embed";
-  }
-  load().catch(()=>{document.getElementById("hs").textContent="Não foi possível carregar /content/site.json. Verifique o deploy.";});
+const div = document.createElement("div");
+
+div.className="kpi";
+
+div.innerHTML=`
+
+<b>${c.title}</b>
+
+<p>${c.desc}</p>
+
+`;
+
+cg.appendChild(div);
+
+});
+
+const gg = document.getElementById("gg");
+
+gg.innerHTML="";
+
+(d.portfolio?.images || []).forEach(src=>{
+
+const img=document.createElement("img");
+
+img.src=src;
+
+gg.appendChild(img);
+
+});
+
+}
+
+load();
+
 </script>
-</body></html>
+
+<!-- NETLIFY IDENTITY -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<script>
+
+if (window.netlifyIdentity) {
+
+window.netlifyIdentity.on("init", user => {
+
+const params = new URLSearchParams(window.location.search);
+
+if(params.get("invite_token")){
+
+setTimeout(()=>{
+
+window.location.href="/admin/";
+
+},500);
+
+}
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
