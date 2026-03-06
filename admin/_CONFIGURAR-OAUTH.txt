@@ -1,0 +1,8 @@
+Para o /admin funcionar em produção no Cloudflare Pages, configure um endpoint OAuth do Decap CMS.
+
+Campos para preencher em admin/config.yml:
+- repo: usuario/repositorio
+- base_url: domínio do seu endpoint OAuth
+- auth_endpoint: auth
+
+Sem isso, o painel abre, mas o login não completa.
