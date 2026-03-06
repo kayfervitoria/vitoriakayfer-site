@@ -1,14 +1,14 @@
 backend:
   name: github
-  repo: SEU_USUARIO_GITHUB/SEU_REPOSITORIO
+  repo: kayfervitoria/vitoriakayfer-site
   branch: main
-  base_url: https://SEU-AUTH-DOMINIO.com
+  base_url: https://vitoriakayfer-auth.kayfervitoria.workers.dev
   auth_endpoint: auth
 
-local_backend: true
 media_folder: "imagens"
 public_folder: "/imagens"
-site_url: "https://SEU-SITE.pages.dev"
+site_url: "https://vitoriakayfer-site.kayfervitoria.workers.dev"
+display_url: "https://vitoriakayfer-site.kayfervitoria.workers.dev"
 show_preview_links: false
 
 collections:
